@@ -26,7 +26,12 @@ export const gathr = {
   name: "Gathr",
   tagline: "Find people nearby for football, treks or a jam session, then actually meet them.",
   summary:
-    "My day job is the frontend. Gathr is where I went past it: I designed the database, wrote the server logic, set up auth, tests and CI, and deployed it to production myself.",
+    "A personal side project, separate from my work at FynTune. My day job is the frontend; Gathr is where I went past it, into the database, server logic, auth, tests, CI and a production deploy.",
+  ai: {
+    title: "Where AI helped",
+    text: "I used AI as a thinking partner while planning Gathr: sketching the screens, shaping the app's structure, sharpening the idea and weighing tech stacks before picking one. I made the final calls and took it through testing to production.",
+    areas: ["Wireframes", "App structure", "Idea refinement", "Stack selection"],
+  },
   live: "https://gathr-meetup.vercel.app",
   repo: "https://github.com/roshanmestri/People-Pulse-Web",
   screens: {

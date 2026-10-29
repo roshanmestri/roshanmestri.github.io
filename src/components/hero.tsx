@@ -21,11 +21,18 @@ function CodeCard() {
         <code>
           <span className={k}>const</span> roshan = {"{\n"}
           {"  "}<span className={p}>role</span>: <span className={s}>&quot;{profile.role}&quot;</span>,{"\n"}
-          {"  "}<span className={p}>company</span>: <span className={s}>&quot;{profile.company}&quot;</span>,{"\n"}
-          {"  "}<span className={p}>since</span>: <span className={s}>2022</span>,{"\n"}
+          {"  "}<span className={p}>experience</span>: <span className={s}>&quot;4+ years&quot;</span>,{"\n"}
           {"  "}<span className={p}>daily</span>: [<span className={s}>&quot;React&quot;</span>, <span className={s}>&quot;TypeScript&quot;</span>, <span className={s}>&quot;React Native&quot;</span>],{"\n"}
-          {"  "}<span className={p}>shipped</span>: <span className={s}>&quot;Gathr&quot;</span>, <span className={c}>{"// full-stack, live"}</span>{"\n"}
-          {"  "}<span className={p}>users</span>: <span className={s}>&quot;9M+&quot;</span>,{"\n"}
+          {"\n"}
+          {"  "}<span className={p}>work</span>: {"{\n"}
+          {"    "}<span className={p}>company</span>: <span className={s}>&quot;{profile.company}&quot;</span>,{"\n"}
+          {"    "}<span className={p}>platformUsers</span>: <span className={s}>&quot;9M+&quot;</span>,{"\n"}
+          {"  },\n"}
+          {"\n"}
+          {"  "}<span className={p}>sideProject</span>: {"{\n"}
+          {"    "}<span className={p}>name</span>: <span className={s}>&quot;Gathr&quot;</span>, <span className={c}>{"// full-stack, live"}</span>{"\n"}
+          {"    "}<span className={p}>builtWith</span>: <span className={s}>&quot;AI-assisted&quot;</span>,{"\n"}
+          {"  },\n"}
           {"};"}
         </code>
       </pre>

@@ -49,14 +49,18 @@ export function Gathr() {
       id="gathr"
       label="Featured project"
       title="Gathr, built end to end"
-      intro="A live product I designed, built, tested and deployed on my own."
+      intro="A personal side project, AI-assisted and live in production."
     >
       <div className="grid gap-4 lg:grid-cols-3">
         <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#2b59ff] via-[#5b3dff] to-[#8b5cf6] p-6 text-white sm:p-8 lg:col-span-2 lg:row-span-2">
           <div aria-hidden className="absolute -right-16 -bottom-16 size-64 rounded-full bg-white/10 blur-2xl" />
-          <p className="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-medium">
-            <span className="size-1.5 rounded-full bg-[#4ade80]" aria-hidden /> Live in production
-          </p>
+          <div className="flex flex-wrap gap-2 text-xs font-medium">
+            <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1">
+              <span className="size-1.5 rounded-full bg-[#4ade80]" aria-hidden /> Live in production
+            </span>
+            <span className="rounded-full bg-white/15 px-3 py-1">Side project</span>
+            <span className="rounded-full bg-white/15 px-3 py-1">✦ AI-assisted</span>
+          </div>
           <h3 className="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">{gathr.name}</h3>
           <p className="mt-3 max-w-lg text-lg text-white/90 text-pretty">{gathr.tagline}</p>
           <p className="mt-3 max-w-lg text-white/75 text-pretty">{gathr.summary}</p>
@@ -115,6 +119,26 @@ export function Gathr() {
           </ul>
         </Card>
       </div>
+
+      <Card className="mt-4 flex flex-col gap-4 p-6 sm:flex-row sm:items-start">
+        <span
+          aria-hidden
+          className="grid size-10 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-[#2b59ff] to-[#8b5cf6] text-white"
+        >
+          ✦
+        </span>
+        <div>
+          <h3 className="font-semibold">{gathr.ai.title}</h3>
+          <p className="mt-1 max-w-3xl leading-relaxed text-muted text-pretty">{gathr.ai.text}</p>
+          <ul className="mt-3 flex flex-wrap gap-1.5" aria-label="Areas where AI helped">
+            {gathr.ai.areas.map((area) => (
+              <li key={area} className="rounded-md bg-accent-soft px-2.5 py-1 text-sm font-medium text-accent">
+                {area}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </Card>
 
       <div className="mt-4 grid items-start gap-4 lg:grid-cols-[1fr_auto]">
         <BrowserShot {...gathr.screens.home} priority />
