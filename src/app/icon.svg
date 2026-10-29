@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#0a0c14"/>
+  <!-- Clip to cap height so the sharp joins end flat, like a typeset monogram -->
+  <clipPath id="caps"><rect x="0" y="13.75" width="64" height="36.5"/></clipPath>
+  <g clip-path="url(#caps)" fill="none" stroke="#fff" stroke-width="4.5" stroke-miterlimit="20">
+    <!-- R: stem and bowl -->
+    <path d="M12 52V16h10a9 9 0 0 1 0 18H12"/>
+    <!-- R's leg runs into the M -->
+    <path d="M19 34l11.5 14V16L41 40l10.5-24v36"/>
+  </g>
+</svg>
