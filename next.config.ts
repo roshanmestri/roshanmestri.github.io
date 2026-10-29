@@ -1,9 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
+  // Build to plain HTML/CSS/JS in `out/` so GitHub Pages can serve it.
+  output: "export",
+  // GitHub Pages has no image server, so serve images as-is.
+  images: { unoptimized: true },
   turbopack: {
     rules: {
       "*.css": {
